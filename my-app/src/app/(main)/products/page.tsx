@@ -1,3 +1,5 @@
+'use client'
+
 import CardProduct from "@/components/card/CardProduct"
 import Footer from "@/components/footer/Footer"
 import FormSearch from "@/components/form/FormSearch"
@@ -6,7 +8,6 @@ import Navbar from "@/components/navbar/Navbar"
 export default function Product() {
     return (
         <main className="flex min-h-screen flex-col justify-between">
-            <Navbar />
             <div>
                 <FormSearch />
             </div>
@@ -17,7 +18,6 @@ export default function Product() {
                 <CardProduct />
                 <CardProduct />
             </div>
-            <Footer />
         </main>
     )
 }

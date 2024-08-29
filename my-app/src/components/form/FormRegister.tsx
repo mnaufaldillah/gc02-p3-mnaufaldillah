@@ -57,6 +57,7 @@ export default function FormRegister() {
                     <h4 className="text-2xl">Already have an account?</h4>
 
                     <Link href="/login" className="my-4  btn btn-outline btn-neutral btn-block">Login</Link>
+                    <Link href="/" className="my-4 btn btn-outline btn-neutral btn-block">Continue Shopping</Link>
             </div>
         </div>
     )

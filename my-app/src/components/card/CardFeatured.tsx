@@ -1,8 +1,6 @@
-'use client'
+import Link from "next/link";
 
-import ButtonRemoveWishlist from "../button/ButtonRemoveWishlist"
-
-export default function CardWishlist() {
+export default function CardFeatured() {
     return (
         <div className="m-2 card bg-base-100">
             <figure>
@@ -13,7 +11,7 @@ export default function CardWishlist() {
                         width: 234,
                         objectFit: "cover"
                     }}
-                    alt="Laptop"  
+                    alt="Laptop" 
                 />
             </figure>
             <div className="card-body">
@@ -22,7 +20,6 @@ export default function CardWishlist() {
                 <h4 className="text-xl">Rp. 14.999.999</h4>
                 <div className="card-actions justify-start">
                     <button className="btn btn-primary">Details</button>
-                    <ButtonRemoveWishlist />
                 </div>
             </div>
         </div>

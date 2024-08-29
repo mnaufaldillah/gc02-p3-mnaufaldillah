@@ -1,4 +1,6 @@
-import Link from "next/link";
+'use client'
+
+import ButtonAddWishlist from "../button/ButtonAddWishlist"
 
 export default function CardProdctDetail() {
     return (
@@ -22,6 +24,7 @@ export default function CardProdctDetail() {
                 <div className="badge badge-outline">Products</div>
                 <div className="card-actions justify-start">
                     <button className="btn btn-primary">Wishlist It!</button>
+                    <ButtonAddWishlist />
                 </div>
             </div>
         </div>

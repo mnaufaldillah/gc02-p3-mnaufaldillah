@@ -36,6 +36,7 @@ export default function FormLogin() {
                 <h4 className="text-2xl">Don't have an account?</h4>
 
                 <Link href="/register" className="my-4 btn btn-outline btn-neutral btn-block">Register</Link>
+                <Link href="/" className="my-4 btn btn-outline btn-neutral btn-block">Continue Shopping</Link>
             </div>
         </div>
     )

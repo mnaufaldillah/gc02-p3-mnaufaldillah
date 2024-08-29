@@ -1,4 +1,6 @@
-import Link from "next/link";
+'use client'
+
+import ButtonAddWishlist from "../button/ButtonAddWishlist"
 
 export default function CardProduct() {
     return (
@@ -20,7 +22,7 @@ export default function CardProduct() {
                 <h4 className="text-xl">Rp. 14.999.999</h4>
                 <div className="card-actions justify-start">
                     <button className="btn btn-primary">Details</button>
-                    <button className="btn btn-primary">Wishlist it!</button>
+                    <ButtonAddWishlist />
                 </div>
             </div>
         </div>
