@@ -1,0 +1,362 @@
+[
+    {
+        "name": "ASUS ZenBook 14",
+        "slug": "asus-zenbook-14",
+        "description": "Go the extra mile with the remarkably sleek Zenbook 14 OLED laptop, an ultra-portable laptop that takes sophistication to a whole new level. Seize every moment using the enhanced extended-life battery, amplify your efficiency with a top-tier Intel Core Ultra 7 processor and Intel Arc graphics, and achieve seamless connectivity via all the essential ports.",
+        "excerpt": "An ultra-portable laptop that takes sophistication to a whole new level",
+        "price": 15300000,
+        "tags": ["ASUS", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111398985alt9?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111398985?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-29T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-29T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Microsoft Surface Pro",
+        "slug": "microsoft-surface-pro",
+        "description": "Usher in a new era of AI productivity with the 11th gen Surface Pro from Microsoft. Get crazy-fast speeds and next-gen capabilities by a powerful AI accelerator and processor for ultimate multi-tasking. It has amazing flexibility with its 165-degree fluid kickstand. And it supports ultra-fast Wi-Fi 7 connectivity. Plus HD front and rear cameras with AI-enhanced features give you perfect lighting and clear sound.",
+        "excerpt": "The 11th gen Surface Pro from Microsoft.",
+        "price": 25500000,
+        "tags": ["Microsoft", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/112003283alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/112003283?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-28T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-28T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "HP Pavilion 15",
+        "slug": "hp-pavilion-15",
+        "description": "This HP Pavilion is a true multitasking machine. With its long battery life and lightweight design, you can work (or play) from anywhere. Just don't forget your charger – or your sense of adventure. A large 16GB of RAM helps keeps everything running smoothly, and with a 15.6 inch display, catching up with the latest dramas and series will be a total dream. Plus, with 512GB of SSD storage, loading and boot times are super-fast and responsive, right from start-up",
+        "excerpt": "This HP Pavilion is a true multitasking machine",
+        "price": 25500000,
+        "tags": ["HP", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/110600742alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/110600742?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-27T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-27T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "HP ENVY x360 14",
+        "slug": "hp-envy-x360-14",
+        "description": "Enjoy seamless multitasking with an AI-powered 2-in-1 PC. With an Intel Core Ultra 7 processor and advanced AI processing, the HP Envy x360 14 2-in-1 Laptop PC lets you run AI apps with ease while enjoying smooth multitasking for a longer-lasting battery life. And its convertible design lets you quickly switch from laptop to tablet.",
+        "excerpt": "Enjoy seamless multitasking with an AI-powered 2-in-1 PC.",
+        "price": 24500000,
+        "tags": ["HP", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/112118371alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/112118371?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-26T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-26T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Lenovo IdeaPad Slim 3i",
+        "slug": "lenovo-ideapad-slim-3i",
+        "description": "Lenovo’s IdeaPad Slim 3i is smart and savvy, and made for heavy on-the-go users from libraries and cafes to airport terminals, with a lightweight and thin profile that's 10% slimmer than the previous generation, yet still military-grade rugged. Get the important stuff done on the go with a powerful Intel Core i7 processor, the adaptive performance of Smart Power, and a full-function USB Type-C port while you learn, work, and stream on its 15.6 inch Full HD display.",
+        "excerpt": "Lenovo’s IdeaPad Slim 3i is smart and savvy, and made for heavy on-the-go users.",
+        "price": 10500000,
+        "tags": ["Lenovo", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111657505?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111657505?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-25T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-25T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "ASUS Vivobook 15",
+        "slug": "asus-vivobook-15",
+        "description": "This ASUS Vivobook laptop makes short work of all your day-to-day tasks. Its streamlined design lets you stream shows and check out the best of the net, either at home or on the move. 16GB of RAM helps keep everything running smoothly, and with a 15.6 Full HD display, catching up with the latest dramas and series will be a total dream. Plus, with 512GB of SSD storage, you can load up photos, videos and documents in no time.",
+        "excerpt": "This ASUS Vivobook laptop makes short work of all your day-to-day tasks.",
+        "price": 10800000,
+        "tags": ["ASUS", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111398981alt2?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111398981?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-24T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-24T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Microsoft Surface Laptop",
+        "slug": "microsoft-surface-laptop",
+        "description": "The 7th generation Surface Laptop gives you exceptional performance, for seamless productivity and creativity. Its blazing NPU speed enables AI-powered applications. Become a creator with just one click. The Microsoft Copilot key helps turn your ideas into reality. Its PixelSense touchscreen display is remarkably bright, with enriched HDR tech for crisper whites, darker blacks, and an extended colour spectrum. And you can shoot, scan or start a call with HD cameras front and rear and AI-enhanced features for superior lighting and crystal clear sound.",
+        "excerpt": "The 7th generation Surface Laptop gives you exceptional performance, for seamless productivity and creativity.",
+        "price": 23500000,
+        "tags": ["Microsoft", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/112003287alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/112003287?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-23T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-23T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "ASUS ROG Strix G17",
+        "slug": "asus-rog-strix-g17",
+        "description": "This ASUS ROG laptop houses some serious power. The NVIDIA RTX graphics card lets you take on the world in whatever game you want. There's 32GB of RAM to keep everything you need running at once, and with a 17.3 inch Full HD screen, you'll get a really clear, crisp picture; perfect for streaming your favourite dramas. Plus, with a massive 1TB of SSD storage, it's quick and easy to load games, photos, documents and anything else you need.",
+        "excerpt": "This ASUS ROG laptop houses some serious power.",
+        "price": 20000000,
+        "tags": ["ASUS", "Gaming Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/109889485alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/109889485?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-22T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-22T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Samsung Galaxy Book4 Pro 360 Convertible",
+        "slug": "samsung-galaxy-book4-pro-360-convertible",
+        "description": "The most powerful 2-in-1 Galaxy Book just got even better courtesy of an Intel Core Ultra 7 processor, and Intel Arc graphics. Whether you’re using the included S Pen or pinching and tapping, Galaxy Book4 Pro 360’s touchscreen looks epic, boasting 3K resolution, vivid colours and a super-smooth 120Hz refresh rate. Can’t decide between laptop or tablet? Just shift between the two, thanks to its signature hinge. And you can take it with you and get powered up in a flash, with a large battery and 65W superfast USB-C charging.",
+        "excerpt": "The most powerful 2-in-1 Galaxy Book just got even better.",
+        "price": 23000000,
+        "tags": ["Samsung", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111556968alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111556968?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-21T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-21T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "ASUS ZenBook Duo",
+        "slug": "asus-zenbook-duo",
+        "description": "The ASUS Zenbook DUO is a revolutionary dual-screen laptop, with two OLED touchscreens, detachable full-size keyboard and built-in kickstand, expertly combining multitasking versatility with superb mobility. Using both 14 inch 3K OLED 120Hz displays, you can instantly expand your workspace to up to 19.8 inches. Outstanding performance is assured with an Intel Core Ultra 9 processor and 32GB of memory, plus a huge 2TB of SSD storage. With dedicated smart software, intuitive gesture control and a long-lasting battery, the easy-to-use Zenbook Duo maximizes productivity, with zero fuss. Now you can Duo it!",
+        "excerpt": "The ASUS Zenbook DUO is a revolutionary dual-screen laptop.",
+        "price": 35500000,
+        "tags": ["ASUS", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111398988alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111398988?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-20T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-20T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Lenovo IdeaPad Slim 5i",
+        "slug": "lenovo-ideapad-slim-5i",
+        "description": "Cramming amazing visuals and portable performance in a slim and light form factor, the Lenovo IdeaPad Slim 5i takes you anywhere you want in your adventures. Integrated with AI-fueled features, quick-charging all-day battery life, a whole suite of connections, and a larger keyboard, you can achieve go-anywhere productivity wherever.",
+        "excerpt": "The Lenovo IdeaPad Slim 5i takes you anywhere you want in your adventures.",
+        "price": 12500000,
+        "tags": ["Lenovo", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111657510alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111657510?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-19T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-19T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "ASUS ZenBook 15",
+        "slug": "asus-zenbook-15",
+        "description": "This ASUS ZenBook laptop flies through complex workflows, heavy editing, and more. There's 16GB of RAM to help keep everything running smoothly, and with a 14 inch OLED screen, you'll get a really clear, crisp picture; perfect for streaming your favourite dramas on. Plus, with 512GB of SSD storage, loading and boot times are super-fast and responsive, right from start-up.",
+        "excerpt": "This ASUS ZenBook laptop flies through complex workflows, heavy editing, and more.",
+        "price": 17000000,
+        "tags": ["ASUS", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/110486048alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/110486048?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-18T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-18T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "ASUS TUF A15 Gaming",
+        "slug": "asus-tuf-a15-gaming",
+        "description": "This ASUS TUF laptop powers you through long gaming sessions on the go. Its beefy RTX graphics card gives you incredible visuals, as real-time ray-tracing has you playing AAA titles the way developers intended. There's 16GB of RAM that'll help run even the most demanding software, and with a 15.6 inch Full HD display, catching up with the latest dramas and series will be a total dream. Plus, with 512GB of SSD storage, you can load up photos, videos and documents in no time.",
+        "excerpt": "This ASUS TUF laptop powers you through long gaming sessions on the go.",
+        "price": 15000000,
+        "tags": ["ASUS", "Gaming Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111398990alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111398990?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-17T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-17T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Acer Aspire 5",
+        "slug": "acer-aspire-5",
+        "description": "The Aspire 5 from Acer is designed to take your computing experience to the next level. With an Intel Core i7 chip and 16GB of RAM, it breezes through even the most demanding tasks. You also get a 512GB SSD, which gives you plenty of space for all your documents and media, and boots up in a flash. Even with all this powerful hardware the Aspire 5 still lasts up to 10.5 hours from a single charge. A 15.6” Full HD screen offers plenty of sharp detail, meaning it’s perfectly suited to a wide range of tasks, and it features Acer’s BlueLightShield technology which helps reduce eye strain and fatigue over those longer work periods.",
+        "excerpt": "The Aspire 5 from Acer is designed to take your computing experience to the next level.",
+        "price": 15000000,
+        "tags": ["Acer", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/112114967alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/112114967?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-16T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-16T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Acer Swift Edge",
+        "slug": "acer-swift-edge",
+        "description": "The Swift Edge from Acer redefines what thin and light laptops are capable of, combining amazing performance with a breath-taking screen. Its striking body features clean, sharp lines that give it an eye-catching style, made using a magnesium-aluminium alloy that is twice as strong as standard aluminium while weighing 20% less. Being so thin and light while also maintaining premium build quality means the Swift Edge is the ideal ultra-portable laptop.",
+        "excerpt": "The Swift Edge from Acer redefines what thin and light laptops are capable of.",
+        "price": 21500000,
+        "tags": ["Acer", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/110945252alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/110945252?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-15T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-15T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Acer Aspire 3",
+        "slug": "acer-aspire-3",
+        "description": "This Acer Aspire laptop has everything you need to breeze through the basics. Binge, browse, or get on with a spot work. There's 16GB of RAM to ensure smooth running, even when running multiple applications, and on the 15.6 inch Full HD screen, films will look just as bright and bold as they do on the big screen. Plus, with 512GB of SSD storage, it's quick and easy to load your music, photos, documents and anything else you need.",
+        "excerpt": "This Acer Aspire laptop has everything you need to breeze through the basics.",
+        "price": 9500000,
+        "tags": ["Acer", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111541261alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111541261?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-14T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-14T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "ASUS ProArt PX13 Convertible",
+        "slug": "asus-proart-px13-convertible",
+        "description": "Meet ProArt PX13, your go-to 13-inch 2-in-1 laptop, designed to effortlessly switch between forms, ready to fuel your creative passion whenever inspiration strikes. Its OLED touchscreen ensures precise colour accuracy for flawless proofing, while versatile I/O ports seamlessly connect all your peripherals. This NVIDIA Studio-validated laptop packs a GeForce RTX 40 Series Laptop GPU, providing powerful graphics and 321 TOPS AI performance. With AI-enhanced creative features, military-grade toughness, and a long-lasting battery, ProArt PX13 transforms any setting into your studio.",
+        "excerpt": "Meet ProArt PX13, your go-to 13-inch 2-in-1 laptop.",
+        "price": 40000000,
+        "tags": ["ASUS", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111987762alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111987762?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-13T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-13T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Samsung Galaxy Book4 Edge",
+        "slug": "samsung-galaxy-book4-edge",
+        "description": "Galaxy AI is here on Galaxy Book, so you can create and connect like never before. The Galaxy Book4 Edge gives you pioneering performance with its Snapdragon X Elite processor. It’s designed specifically for AI, an exceptionally powerful, intelligent and power-efficient processor. Super thin and light, this is a portable powerhouse, packing so much into such a small package.",
+        "excerpt": "Galaxy AI is here on Galaxy Book, so you can create and connect like never before.",
+        "price": 25000000,
+        "tags": ["Samsung", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111860910alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111860910?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-12T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-12T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Samsung Galaxy Book4 Ultra",
+        "slug": "samsung-galaxy-book4-ultra",
+        "description": "Break the mould with Samsung’s Galaxy Book4 Ultra, powered by an Intel Core Ultra 9 processor and NVIDIA GeForce RTX 4070 graphics. Its 16” Dynamic AMOLED 2X display offers a breath-taking view …and now it’s a touchscreen. Ticking jobs off the to-do list can happily take place wherever you are, thanks to its compact design and aluminium body. Almighty inside and extraordinary outside, Galaxy Book4 Ultra is the full package, with a port for every occasion.",
+        "excerpt": "Break the mould with Samsung’s Galaxy Book4 Ultra.",
+        "price": 40000000,
+        "tags": ["Samsung", "Light Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111556957alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111556957?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-11T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-11T17:00:00.000+00:00"
+        }
+    },
+    {
+        "name": "Lenovo Legion 5 Gaming",
+        "slug": "lenovo-legion-5-gaming",
+        "description": "The game is well and truly on with the mighty Legion 5 from Lenovo. RTX 4070 graphics bring your gaming world to life with stunning visual performance, while the Lenovo AI Engine+ with LA1 AI chip turbocharges your gaming prowess and more. Wave goodbye to overheating woes and noisy fans, thanks to the revolutionary Legion ColdFront Hyper technology, and dive into those mesmerising visuals on the Lenovo PureSight Gaming display. Customize your gaming haven with the dazzling Legion Spectrum 4-zone RGB lighting on the Legion TrueStrike keyboard. And it’s all wrapped up in a sleek, portable design.",
+        "excerpt": "The game is well and truly on with the mighty Legion 5 from Lenovo.",
+        "price": 40000000,
+        "tags": ["Lenovo", "Gaming Laptop"],
+        "thumbnail": "https://johnlewis.scene7.com/is/image/JohnLewis/111566625alt1?wid=234&hei=312",
+        "images": [
+            "https://johnlewis.scene7.com/is/image/JohnLewis/111566625?wid=640&hei=853"
+        ],
+        "createdAt": {
+            "$date": "2024-08-10T17:00:00.000+00:00"
+        },
+        "updatedAt": {
+            "$date": "2024-08-10T17:00:00.000+00:00"
+        }
+    }
+]
