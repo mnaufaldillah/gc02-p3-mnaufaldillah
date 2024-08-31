@@ -27,13 +27,13 @@ export async function POST(request: NextRequest) {
         const foundUser = await getUserByEmail(body.email);
 
         if(!foundUser) {
-            throw { await: "Unauthorized" }
+            throw { message: "Unauthorized" }
         }
 
         const isValidPassword = comparePassword(body.password, foundUser.password);
 
         if(!isValidPassword) {
-            throw { await: "Unauthorized"}
+            throw { message: "Unauthorized"}
         }
 
         const access_token = signToken({
