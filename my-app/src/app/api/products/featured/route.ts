@@ -1,11 +1,11 @@
-import { getAllProducts } from "@/db/models/product";
+import { getAllProductsFeatured } from "@/db/models/product";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
     try {
         // console.log(request.headers, `<------------ request`);
         
-        const allProducts = await getAllProducts();
+        const allProducts = await getAllProductsFeatured();
 
         return NextResponse.json(allProducts, {
             status: 200

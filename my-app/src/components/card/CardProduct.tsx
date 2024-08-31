@@ -1,13 +1,21 @@
 'use client'
 
+import { ProductModel } from "@/db/models/product"
 import ButtonAddWishlist from "../button/ButtonAddWishlist"
+import Link from "next/link"
 
-export default function CardProduct() {
+export default function CardProduct({ productDetail} : { productDetail: ProductModel}) {
+    function formatCurrency(inputNumber: number) {
+        return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(
+            inputNumber
+        )
+    }
+
     return (
         <div className="m-2 card bg-base-100">
             <figure>
                 <img
-                    src="https://johnlewis.scene7.com/is/image/JohnLewis/112118371alt1?wid=234&hei=312"
+                    src={productDetail.thumbnail}
                     style={{ 
                         height: 312,
                         width: 234,
@@ -17,12 +25,12 @@ export default function CardProduct() {
                 />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">HP Pavilion Aero 13</h2>
-                <p>HP Pavilion Aero 13 16GB RAM 512GB</p>
-                <h4 className="text-xl">Rp. 14.999.999</h4>
+                <h2 className="card-title">{productDetail.name}</h2>
+                <p>{productDetail.excerpt}</p>
+                <h4 className="text-xl">{formatCurrency(productDetail.price)}</h4>
                 <div className="card-actions justify-start">
-                    <button className="btn btn-primary">Details</button>
-                    <ButtonAddWishlist />
+                    <Link href={`/products/${productDetail.slug}`} className="btn btn-primary">Details</Link>
+                    <ButtonAddWishlist productId={productDetail._id} />
                 </div>
             </div>
         </div>

@@ -1,10 +1,21 @@
 import Link from "next/link";
+import { handleLogin } from "@/actions/handleLogin";
 
-export default function FormLogin() {
+export interface MyResponse {
+    access_token: string
+}
+
+export default function FormLogin({ searchParams } : {searchParams: { error: string }}) {
+
     return (
         <div className="flex justify-center grid grid-cols-1">
             <div className="m-8 bg-base-100">
-                <form>
+                {
+                    searchParams?.error ? <div role="alert" className="alert alert-error">
+                        <span>{searchParams.error}</span>
+                    </div> : ""
+                }
+                <form action={handleLogin}>
                     <div className="m-8">
                         <label htmlFor="email">Email</label>
                         <input 

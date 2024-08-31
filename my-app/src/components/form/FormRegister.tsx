@@ -1,10 +1,16 @@
+import { handleRegister } from "@/actions/handleRegister";
 import Link from "next/link";
 
-export default function FormRegister() {
+export default function FormRegister({ searchParams }: { searchParams: { error: string } }) {
     return (
         <div className="flex justify-center grid grid-cols-1">
             <div className="m-8 bg-base-100">
-                <form>
+                {
+                    searchParams?.error ? <div role="alert" className="alert alert-error">
+                        <span>{searchParams.error}</span>
+                    </div> : ""
+                }
+                <form action={handleRegister}>
                     <div className="m-8">
                         <label htmlFor="name">Full Name</label>
                         <input 

@@ -27,13 +27,13 @@ export async function POST(request: NextRequest) {
         const foundUser = await getUserByEmail(body.email);
 
         if(!foundUser) {
-            throw { message: "Unauthorized" }
+            throw { name: "Unauthorized" }
         }
 
         const isValidPassword = comparePassword(body.password, foundUser.password);
 
         if(!isValidPassword) {
-            throw { message: "Unauthorized"}
+            throw { name: "Unauthorized"}
         }
 
         const access_token = signToken({
@@ -42,10 +42,11 @@ export async function POST(request: NextRequest) {
             email: foundUser.email
         });
 
-        const response = NextResponse.json({
+        return NextResponse.json({
             access_token
-        });
+        }, { status: 200});
     } catch (error: any) {
+        // console.log(error, `<----------- eror`);
         if(error instanceof z.ZodError) {
             console.log(error.issues);
             
@@ -63,9 +64,14 @@ export async function POST(request: NextRequest) {
         }
 
         if (error.name === "Unauthorized") {
-            return NextResponse.json({
-
-            })
+            return NextResponse.json(
+                {
+                    message: `Invalid email or password input`
+                },
+                {
+                    status: 401
+                }
+            )
         }
 
         return NextResponse.json(

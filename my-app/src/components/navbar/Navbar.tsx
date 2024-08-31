@@ -1,6 +1,10 @@
+import { cookies } from "next/headers";
 import Link from "next/link";
+import ButtonLogout from "../button/ButtonLogout";
 
 export default function Navbar() {
+    // console.log(cookies().get('Authorization'));
+    
     return (
         <div className="navbar bg-base-200">
             <div className="navbar-start">
@@ -35,7 +39,13 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link href="/login" className="btn btn-neutral">Login</Link>
+                {
+                    cookies().get('Authorization') ? (
+                        <ButtonLogout />
+                    ) : (
+                        <Link href="/login" className="btn btn-neutral">Login</Link>
+                    )
+                }
             </div>
         </div>
     )

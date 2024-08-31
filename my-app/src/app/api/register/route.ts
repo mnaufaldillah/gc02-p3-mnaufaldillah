@@ -1,4 +1,4 @@
-import { registerUser } from "@/db/models/user";
+import { getUserByEmail, getUserByUsername, registerUser } from "@/db/models/user";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
@@ -31,12 +31,24 @@ export async function POST(request: NextRequest) {
             throw parsedData.error;
         };
 
+        const foundUserByUsername = await getUserByUsername(body.username);
+
+        if(foundUserByUsername) {
+            throw { name: "UniqueUsername" }
+        }
+
+        const foundUserByEmail = await getUserByEmail(body.email);
+
+        if(foundUserByEmail) {
+            throw { name: "UniqueEmail" }
+        }
+
         const newUser = await registerUser(body);
 
         return NextResponse.json(newUser, {
             status: 201
         });
-    } catch (error) {
+    } catch (error: any) {
         // console.log(error, `<--------- error`);
         if(error instanceof z.ZodError) {
             // console.log(error.issues);
@@ -54,6 +66,27 @@ export async function POST(request: NextRequest) {
             );
         }
         
+        if (error.name === "UniqueUsername") {
+            return NextResponse.json(
+                {
+                    message: `Username must be unique`
+                },
+                {
+                    status: 400
+                }
+            )
+        }
+
+        if (error.name === "UniqueEmail") {
+            return NextResponse.json(
+                {
+                    message: `Email must be unique`
+                },
+                {
+                    status: 400
+                }
+            )
+        }
 
         return NextResponse.json(
             {
