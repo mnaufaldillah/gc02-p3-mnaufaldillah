@@ -1,4 +1,4 @@
-export default function FormSearch({ searchParams }: { searchParams: { inputSearch: string } }) {
+export default function FormSearch({ inputSearch, setInputSearch }: any) {
     return (
         <div className="flex items-center justify-center">
             <div className="m-3">
@@ -8,17 +8,11 @@ export default function FormSearch({ searchParams }: { searchParams: { inputSear
                             type="text" 
                             name="inputSearch"
                             id="inputSearch"
+                            defaultValue={inputSearch}
                             placeholder="Search product" 
                             className="input input-bordered w-full max-w-xs" 
+                            onChange={(e) => setInputSearch(e.target.value)}
                         />
-                    </div>
-                    <div className="m-1">
-                        <button
-                            type="submit" 
-                            className="btn btn-neutral"
-                        >
-                            Search
-                        </button>
                     </div>
                 </form>
             </div>

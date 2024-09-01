@@ -38,6 +38,24 @@ export const getAllProducts = async () => {
     return products;
 }
 
+export const getAllProductsByName = async (inputSearch : string) => {
+    const db = await getDb();
+
+    const products = (await db
+        .collection(COLLECTION_PRODUCT)
+        .find(
+            {
+                name: {
+                    '$regex': inputSearch, '$options': 'i'
+                }
+            }
+        )
+        .toArray()
+    ) as ProductModel[]
+
+    return products;
+}
+
 export const getAllProductsFeatured = async () => {
     const db = await getDb();
 
