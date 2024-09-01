@@ -41,7 +41,7 @@ export default function Product() {
 
         if(inputSearch) {
             address += `?search=${inputSearch}`;
-            setPage(0)
+            setPage(1)
         }
 
         if(address.includes("?")) {
@@ -71,7 +71,7 @@ export default function Product() {
             <div id="parentScrollDiv" className="m-4">
                 <InfiniteScroll
                     dataLength={products.length}
-                    next={getMoreProducts}
+                    next={() => {getMoreProducts(inputSearch)}}
                     hasMore={true}
                     loader={<span className="loading loading-bars loading-lg"></span>}
                     scrollableTarget="arentScrollDiv"
