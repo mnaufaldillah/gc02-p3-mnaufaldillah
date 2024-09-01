@@ -14,6 +14,7 @@ import { useDebounce } from "use-debounce"
 
 export default function Product() {
     const [inputSearch, setInputSearch] = useState<string>("");
+    const [page, setPage] = useState<number>(0);
     const [products, setProducts] = useState<ProductModel[]>([]);
     const [debouncedInputSearch] = useDebounce(inputSearch, 4000);
     // let data = await getAllProducts();
@@ -33,6 +34,32 @@ export default function Product() {
         setProducts(data)
     }
 
+    async function getMoreProducts(inputSearch? : string) {
+        setPage(page + 1);
+
+        let address = '/api/products';
+
+        if(inputSearch) {
+            address += `?search=${inputSearch}`;
+            setPage(0)
+        }
+
+        if(address.includes("?")) {
+            address += `&page=${page}`;
+        } else {
+            address += `?page=${page}`;
+        }
+        
+
+        const res = await fetch(BASE_URL + address, {
+            cache: "no-store"
+        });
+
+        const data = await res.json();
+
+        setProducts(products.concat(data));
+    }
+
     useEffect(() => {
         getAllProducts(inputSearch)
     }, [debouncedInputSearch])
@@ -41,12 +68,23 @@ export default function Product() {
     return (
         <main className="flex min-h-screen flex-col justify-between">
             <FormSearch inputSearch={inputSearch} setInputSearch={setInputSearch} />
-            <div className="m-4 grid grid-cols-4">
-                {products.map((item : ProductModel, index : number) => {
-                    return (
-                        <CardProduct productDetail={item} key={index}/>
-                    )
-                })} 
+            <div id="parentScrollDiv" className="m-4">
+                <InfiniteScroll
+                    dataLength={products.length}
+                    next={getMoreProducts}
+                    hasMore={true}
+                    loader={<span className="loading loading-bars loading-lg"></span>}
+                    scrollableTarget="arentScrollDiv"
+                    endMessage={<p>That's all!</p>}
+                >
+                    {products.map((item : ProductModel, index : number) => {
+                        return (
+                            <div className="">
+                                <CardProduct productDetail={item} key={index}/>
+                            </div>
+                        )
+                    })} 
+                </InfiniteScroll>
             </div>
         </main>
     )

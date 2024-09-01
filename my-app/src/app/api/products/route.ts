@@ -12,12 +12,14 @@ export async function GET(request: NextRequest, { searchParams }: { searchParams
 
         const inputSearch = search.split("?search=")[1];
 
+        const inputPage = parseInt(search.split("page=")[1], 10) || 0;
+
         let allProducts;
 
         if(inputSearch) {
-            allProducts = await getAllProductsByName(inputSearch)
+            allProducts = await getAllProductsByName(inputSearch, inputPage)
         } else {
-            allProducts = await getAllProducts() 
+            allProducts = await getAllProducts(inputPage)
         }
         
         // const allProducts = await getAllProducts();

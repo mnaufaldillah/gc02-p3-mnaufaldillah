@@ -26,19 +26,21 @@ export const getDb = async () => {
     return db;
 }
 
-export const getAllProducts = async () => {
+export const getAllProducts = async (page: number) => {
     const db = await getDb();
 
     const products = (await db
         .collection(COLLECTION_PRODUCT)
         .find()
+        .limit(8)
+        .skip(page * 8)
         .toArray()
     ) as ProductModel[]
 
     return products;
 }
 
-export const getAllProductsByName = async (inputSearch : string) => {
+export const getAllProductsByName = async (inputSearch : string, page: number) => {
     const db = await getDb();
 
     const products = (await db
@@ -50,6 +52,8 @@ export const getAllProductsByName = async (inputSearch : string) => {
                 }
             }
         )
+        .limit(8)
+        .skip(page * 8)
         .toArray()
     ) as ProductModel[]
 
