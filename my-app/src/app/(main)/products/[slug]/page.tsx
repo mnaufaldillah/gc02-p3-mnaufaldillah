@@ -18,7 +18,7 @@ export async function generateMetadata({ params } : PropsMetadata){
 
 async function getProductBySlug(slug: string) {
     const res = await fetch(BASE_URL + `/api/products/${slug}`, {
-        cache: "no-store",
+        // cache: "no-store",
         headers: {
             "Content-Type": "application/json",
         }

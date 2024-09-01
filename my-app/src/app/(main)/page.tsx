@@ -6,7 +6,7 @@ import { ProductModel } from "@/db/models/product";
 
 async function getAllProductsFeatured() {
   const res = await fetch(BASE_URL + '/api/products/featured', {
-      cache: "no-store"
+      // cache: "no-store"
   });
 
   const data = await res.json();

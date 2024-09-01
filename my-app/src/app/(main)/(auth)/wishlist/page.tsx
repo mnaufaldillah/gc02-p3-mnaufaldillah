@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 
 async function getAllWishlist() {
     const res = await fetch(BASE_URL + '/api/wishlists', {
-        cache: "no-store",
+        // cache: "no-store",
         headers: {
             Cookie: cookies().toString()
         }

@@ -26,7 +26,7 @@ export default function Product() {
             address += `?search=${inputSearch}`
         }
         const res = await fetch(BASE_URL + address, {
-            cache: "no-store"
+            // cache: "no-store"
         });
     
         const data = await res.json();
@@ -52,7 +52,7 @@ export default function Product() {
         
 
         const res = await fetch(BASE_URL + address, {
-            cache: "no-store"
+            // cache: "no-store"
         });
 
         const data = await res.json();
