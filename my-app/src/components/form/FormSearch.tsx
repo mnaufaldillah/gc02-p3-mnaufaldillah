@@ -1,4 +1,4 @@
-export default function FormSearch() {
+export default function FormSearch({ searchParams }: { searchParams: { inputSearch: string } }) {
     return (
         <div className="flex items-center justify-center">
             <div className="m-3">
@@ -6,8 +6,8 @@ export default function FormSearch() {
                     <div className="m-1">
                         <input 
                             type="text" 
-                            name="search"
-                            id="search"
+                            name="inputSearch"
+                            id="inputSearch"
                             placeholder="Search product" 
                             className="input input-bordered w-full max-w-xs" 
                         />

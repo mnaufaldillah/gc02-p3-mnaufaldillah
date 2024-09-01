@@ -11,6 +11,8 @@ export async function GET(request: NextRequest) {
             status: 200
         });
     } catch (error: any) {
+        console.log(error, `<------------ eror`);
+        
         return NextResponse.json(
             {
                 message: `Internal Servel Error`

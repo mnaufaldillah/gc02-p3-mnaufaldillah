@@ -1,5 +1,20 @@
 import CardProdctDetail from "@/components/card/CardProductDetail"
 import { BASE_URL } from "@/constants";
+import type { Metadata } from "next";
+
+type PropsMetadata = {
+    params: { slug: string }
+}
+
+export async function generateMetadata({ params } : PropsMetadata){
+    const dataProducts = await getProductBySlug(params.slug);
+
+    return {
+        name: dataProducts.name,
+        excerpt: dataProducts.excerpt,
+        description: dataProducts.description
+    }
+}
 
 async function getProductBySlug(slug: string) {
     const res = await fetch(BASE_URL + `/api/products/${slug}`, {

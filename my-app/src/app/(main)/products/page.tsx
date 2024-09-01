@@ -19,14 +19,14 @@ async function getAllProducts() {
     return data;
 }
 
-export default async function Product() {
+export default async function Product({ searchParams }: { searchParams: { inputSearch: string } }) {
     const data = await getAllProducts()
 
     // console.log(data, `<---------- data produk`);
     return (
         <main className="flex min-h-screen flex-col justify-between">
             <div>
-                <FormSearch />
+                <FormSearch searchParams={searchParams}/>
             </div>
             <div className="m-4 grid grid-cols-4">
                 {data.map((item : ProductModel, index : number) => {
