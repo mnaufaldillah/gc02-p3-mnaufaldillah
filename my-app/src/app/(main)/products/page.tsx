@@ -15,6 +15,7 @@ import { useDebounce } from "use-debounce"
 export default function Product() {
     const [inputSearch, setInputSearch] = useState<string>("");
     const [page, setPage] = useState<number>(0);
+    const [hasMore, setHasMore] = useState(true)
     const [products, setProducts] = useState<ProductModel[]>([]);
     const [debouncedInputSearch] = useDebounce(inputSearch, 4000);
     // let data = await getAllProducts();
@@ -58,6 +59,10 @@ export default function Product() {
         const data = await res.json();
 
         setProducts(products.concat(data));
+
+        if(data.length < 8) {
+            setHasMore(false);
+        }
     }
 
     useEffect(() => {
@@ -72,10 +77,10 @@ export default function Product() {
                 <InfiniteScroll
                     dataLength={products.length}
                     next={() => {getMoreProducts(inputSearch)}}
-                    hasMore={true}
+                    hasMore={hasMore}
                     loader={<span className="loading loading-bars loading-lg"></span>}
                     scrollableTarget="parentScrollDiv"
-                    endMessage={<p>That's all!</p>}
+                    endMessage={<span className="text-center">That's all!</span>}
                     style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
                 >
                     {products.map((item : ProductModel, index : number) => {
