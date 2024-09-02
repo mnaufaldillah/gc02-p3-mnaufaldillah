@@ -68,24 +68,24 @@ export default function Product() {
     return (
         <main className="flex min-h-screen flex-col justify-between">
             <FormSearch inputSearch={inputSearch} setInputSearch={setInputSearch} />
-            <div id="parentScrollDiv" className="m-4">
+            {/* <div id="parentScrollDiv" className="m-4 grid grid-cols-4"> */}
                 <InfiniteScroll
                     dataLength={products.length}
                     next={() => {getMoreProducts(inputSearch)}}
                     hasMore={true}
                     loader={<span className="loading loading-bars loading-lg"></span>}
-                    scrollableTarget="arentScrollDiv"
+                    scrollableTarget="parentScrollDiv"
                     endMessage={<p>That's all!</p>}
+                    style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
                 >
                     {products.map((item : ProductModel, index : number) => {
                         return (
-                            <div className="">
                                 <CardProduct productDetail={item} key={index}/>
-                            </div>
+
                         )
                     })} 
                 </InfiniteScroll>
-            </div>
+            {/* </div> */}
         </main>
     )
 }

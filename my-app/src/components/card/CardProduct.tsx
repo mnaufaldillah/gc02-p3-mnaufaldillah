@@ -12,7 +12,7 @@ export default function CardProduct({ productDetail} : { productDetail: ProductM
     }
 
     return (
-        <div className="m-2 card bg-base-100">
+        <div className="m-2 card bg-base-100 w-1/5">
             <figure>
                 <img
                     src={productDetail.thumbnail}
